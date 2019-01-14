@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp">
+        <TextView
+            android:text="@string/bottom_gravity"
+            android:textStyle="bold"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="bottom"/>
+        <TextView
+            android:text="@string/center_gravity"
+            android:textStyle="bold"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="center"/>
+        <TextView
+            android:text="@string/center_horizontal_gravity"
+            android:textStyle="bold"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:text="@string/fill_gravity"
+            android:textStyle="bold"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="fill"/>
+        <TextView
+            android:text="@string/bottom_right_gravity"
+            android:textStyle="bold"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="bottom|end"/>
+        <TextView
+            android:text="@string/center_right_gravity"
+            android:textStyle="bold"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="center|end"/>
+
+        <TextView
+            android:text="@string/end_gravity"
+            android:textStyle="bold"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="end"/>
+        <TextView
+            android:text="@string/top_gravity"
+            android:textStyle="bold"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="top"/>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

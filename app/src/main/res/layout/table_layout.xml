@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:minHeight="100px">
+
+                <TextView
+                    android:text="First row"
+                    android:background="@color/colorPrimary"/>
+            </TableRow>
+            <TableRow
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary">
+
+                <TextView  android:text="column(0)"
+                    android:layout_column="0"
+                    android:background="@color/colorAccent"
+                    android:layout_margin="10px"/>
+
+                <TextView  android:text="column(1)"
+                    android:layout_column="1"
+                    android:layout_margin="10px"
+                    android:background="@color/colorAccent"/>
+
+                <TextView  android:text="column(2)"
+                    android:layout_column="2"
+                    android:layout_margin="10px"
+                    android:background="@color/colorAccent"/>
+
+            </TableRow>
+            <TableRow android:minHeight="200px"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView  android:text="column(0)"
+                    android:layout_column="0"
+                    android:layout_margin="10px"
+                    android:background="@color/colorAccent"/>
+
+
+                <TextView  android:text="column(1)"
+                    android:layout_column="1"
+                    android:layout_margin="10px"
+                    android:background="@color/colorAccent"/>
+
+
+            </TableRow>
+        </TableLayout>
+            <!--
+            SOURCE : https://stackoverflow.com/questions/32331368/how-do-androidshrinkcolumns-and-androidstretchcolumns-work
+            -->
+        <TableLayout
+            android:layout_marginBottom="200px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1"
+            android:stretchColumns="2,3">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@color/colorAccent"
+                    android:text="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@color/colorPrimary"
+                    android:text="2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="3" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@color/colorPrimary"
+
+                    android:text="4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@color/colorAccent"
+
+                    android:text="5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@color/colorPrimary"
+                    android:text="6" />
+            </TableRow>
+        </TableLayout>
+
+        <!--
+            SOURCE https://www.tutorialspoint.com/android/android_table_layout.htm
+        -->
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:text="Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textClock"
+                    android:text="10:25 AM"
+                    android:layout_column="2" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="First Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1" />
+
+                <EditText
+                    android:width="200px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="Last Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1" />
+
+                <EditText
+                    android:width="100px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar"
+                    android:layout_column="2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:id="@+id/button"
+                    android:layout_column="2" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

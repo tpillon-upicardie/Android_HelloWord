@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+
+    <!-- layout buttons -->
+    <string name="linear">LinearLayout</string>
+    <string name="relative">RelativeLayout</string>
+    <string name="table">TableLayout</string>
+    <string name="frame">FrameLayout</string>
+    <string name="constraint">ConstraintLayout</string>
+
+    <!-- gravity string -->
+    <string name="bottom_gravity">Bottom gravity</string>
+    <string name="center_gravity">Center gravity</string>
+    <string name="center_horizontal_gravity">Center_horizontal gravity</string>
+    <string name="fill_gravity">Fill gravity</string>
+    <string name="top_gravity">Top gravity</string>
+    <string name="end_gravity">End gravity</string>
+    <string name="start_gravity">Start gravity</string>
+    <string name="bottom_right_gravity">Bottom right gravity</string>
+    <string name="center_right_gravity">Center right gravity</string>
+
+    <!-- constraint string -->
+    <string name="text_view">TextView</string>
+    <string name="constraint_to_guideline">Constraint to guideline</string>
+    <string name="constraint_top_to_bottom">Constraint top to bottom</string>
+    <string name="reference_value">Reference value</string>
+    <string name="constraint_start_to_end_of">Constraint start to end of</string>
+</resources>
