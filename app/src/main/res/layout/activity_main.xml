@@ -9,42 +9,49 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <Button
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/linear"
-            android:onClick="onClickLinear"/>
+            android:onClick="onClickLinear"
+            android:text="@string/linear" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/relative"
-            android:onClick="onClickRelative"/>
+            android:onClick="onClickRelative"
+            android:text="@string/relative" />
 
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/frame"
-            android:onClick="onClickFrame"/>
+            android:onClick="onClickFrame"
+            android:text="@string/frame" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/table"
-            android:onClick="onClickTable"/>
+            android:onClick="onClickTable"
+            android:text="@string/table" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/constraint"
-            android:onClick="onClickConstraint"/>
+            android:onClick="onClickConstraint"
+            android:text="@string/constraint" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickTest"
+            android:text="@string/test_during_tp" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

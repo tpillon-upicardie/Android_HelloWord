@@ -20,7 +20,8 @@
         <activity android:name=".FrameActivity" />
         <activity android:name=".RelativeActivity" />
         <activity android:name=".TableActivity" />
-        <activity android:name=".ConstraintActivity"/>
+        <activity android:name=".ConstraintActivity" />
+        <activity android:name=".TestActivity"></activity>
     </application>
 
 </manifest>

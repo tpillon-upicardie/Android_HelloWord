@@ -23,13 +23,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
     public void onClickLinear(View view) {
         Intent intent = new Intent(this, LinearActivity.class);
         startActivity(intent);
     }
 
         public void onClickRelative(View view) {
-            Intent intent = new Intent(this, RelativeActivity.class);
+            Intent intent = new Intent(this,
+                                        RelativeActivity.class);
             startActivity(intent);
     }
 
@@ -46,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickConstraint(View view) {
         Intent intent = new Intent(this, ConstraintActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickTest(View view) {
+        Intent intent = new Intent(this, TestActivity.class);
         startActivity(intent);
     }
 }
